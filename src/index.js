@@ -1,9 +1,9 @@
 import ReactDOM from "react-dom/client";
-
+import "./CSS/style.css"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 function MainHeader() {
-  return <h1>REACT COURSE</h1>;
+  return <h1 className="heading1">REACT COURSE</h1>;
 }
 
 const subHeaderStyle = {
@@ -27,9 +27,9 @@ function Header() {
 function MainBody() {
   return (
     <div>
-      <p>In this course, we will learn reasct js by building Taskopedia</p>
+      <p className="text-primary">In this course, we will learn reasct js by building Taskopedia</p>
       <ul>
-        <li>Call Ben</li>
+        <li style={{color: "green"}}>Call Ben</li>
         <li>Go to lidl</li>
       </ul>
     </div>
