@@ -25,12 +25,16 @@ function Header() {
 }
 
 function MainBody() {
+
+  const whatWeWillLearn = "React JS";
+  const totalLectures = 3;
   return (
     <div>
-      <p className="text-primary">In this course, we will learn reasct js by building Taskopedia</p>
+      <p className="text-primary">In this course, we will learn {whatWeWillLearn} by building Taskopedia</p>
+      <p>Total Lecture - {totalLectures}</p>
       <ul>
-        <li style={{color: "green"}}>Call Ben</li>
-        <li>Go to lidl</li>
+        <li style={{color: "green"}}>Basic Foundation</li>
+        <li>Functional and class components</li>
       </ul>
     </div>
   );
