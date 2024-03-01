@@ -6,8 +6,13 @@ function MainHeader() {
   return <h1>REACT COURSE</h1>;
 }
 
+const subHeaderStyle = {
+  color: "blueviolet",
+  backgroundColor: "lightgrey"
+}
+
 function SubHeader() {
-  return <p>This is an exciting course!</p>;
+  return <p style={subHeaderStyle}>This is an exciting course!</p>;
 }
 
 function Header() {
@@ -32,7 +37,7 @@ function MainBody() {
 }
 
 function Footer() {
-  return <p>Happy Coding!</p>;
+  return <p style={{color:"grey", backgroundColor:"black"}} >Happy Coding!</p>;
 }
 
 root.render(
