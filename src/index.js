@@ -2,6 +2,23 @@ import ReactDOM from "react-dom/client";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+function MainHeader() {
+  return <h1>REACT COURSE</h1>;
+}
+
+function SubHeader() {
+  return <p>This is an exciting course!</p>;
+}
+
+function Header() {
+  return (
+    <div>
+      <MainHeader />
+      <SubHeader />
+    </div>
+  );
+}
+
 function MainBody() {
   return (
     <div>
@@ -14,7 +31,14 @@ function MainBody() {
   );
 }
 
+function Footer() {
+  return <p>Happy Coding!</p>;
+}
+
 root.render(
-<div>
-  <MainBody/>
-</div>);
+  <div>
+    <Header />
+    <MainBody />
+    <Footer />
+  </div>
+);
