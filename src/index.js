@@ -32,10 +32,10 @@ function Footer() {
 }
 
 root.render(
-  <div className="container">
+  <div className="">
     <Header />
     <MainBody />
-    <div className="row">Students Enrolled</div>
+    <div className="container row">Students Enrolled</div>
     <Student
       fullName="Agata Kowalska"
       codingExperience={3}
