@@ -36,9 +36,21 @@ root.render(
     <Header />
     <MainBody />
     <div className="row">Students Enrolled</div>
-    <Student fullName="Agata Kowalska" codingExperience={3}/>
-    <Student fullName="Mateusz Koziol" codingExperience={1}/>
-    <Student fullName="Agnieszka Wlodarczyk" codingExperience={5}/>
+    <Student
+      fullName="Agata Kowalska"
+      codingExperience={3}
+      headshot="https://api.lorem.space/image/face?w=150&h=150"
+    />
+    <Student
+      fullName="Mateusz Koziol"
+      codingExperience={1}
+      headshot="https://api.lorem.space/image/face?w=150&h=151"
+    />
+    <Student
+      fullName="Agnieszka Wlodarczyk"
+      codingExperience={5}
+      headshot="https://api.lorem.space/image/face?w=150&h=152"
+    />
     <Footer />
   </div>
 );
