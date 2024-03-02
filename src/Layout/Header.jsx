@@ -1,5 +1,5 @@
 import logo from "../images/react.png"
-const MainHeader = () => {
+function MainHeader() {
   return(
     <div className="pt-3 py-1 pl-2" style={{backgroundColor: "black"}}>
       <img alt= "" src={logo} style = {{ height: "35px", verticalAlign: "top"}}>
@@ -14,7 +14,7 @@ const subHeaderStyle = {
   backgroundColor: "lightgrey",
 }
 
-const SubHeader = () => {
+function SubHeader(){
   return <p style={subHeaderStyle}>This is an exciting course!</p>;
 }
 
