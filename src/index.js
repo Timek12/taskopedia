@@ -1,6 +1,8 @@
 import ReactDOM from "react-dom/client";
 import "./CSS/style.css";
-import Header from "./header";
+import Header from "./Header";
+import Student from "./Student";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 function MainBody() {
@@ -23,28 +25,6 @@ function MainBody() {
   );
 }
 
-function Students() {
-  const fullName = "Kris Walley";
-  const programmingExperience = 2;
-  return (
-    <div className="container p-4">
-      <div className="row">Students Enrolled</div>
-      <div className="row border">
-        <div className="col-2">
-          <img
-            src={`https://ui-avatars.com/api/?name=${fullName}`}
-            className="w-100"
-          ></img>
-        </div>
-        <div className="col-10">
-          {fullName} <br />
-          Coding Experience {programmingExperience} years
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function Footer() {
   return (
     <p style={{ color: "grey", backgroundColor: "black" }}>Happy Coding!</p>
@@ -52,10 +32,13 @@ function Footer() {
 }
 
 root.render(
-  <div>
+  <div className="container">
     <Header />
     <MainBody />
-    <Students />
+    <div className="row">Students Enrolled</div>
+    <Student fullName="Agata Kowalska" codingExperience={3}/>
+    <Student fullName="Mateusz Koziol" codingExperience={1}/>
+    <Student fullName="Agnieszka Wlodarczyk" codingExperience={5}/>
     <Footer />
   </div>
 );
