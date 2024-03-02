@@ -1,4 +1,4 @@
-export default function Student(props) {
+const Student = (props) => {
   return (
     <div className="p-4">
       <div className="row border">
@@ -16,3 +16,5 @@ export default function Student(props) {
     </div>
   );
 }
+
+export default Student;

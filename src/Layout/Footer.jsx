@@ -1,4 +1,4 @@
-export default function Footer() {
+const Footer = () =>{
   return (
     <p
       style={{
@@ -12,3 +12,5 @@ export default function Footer() {
     </p>
   );
 }
+
+export default Footer;
