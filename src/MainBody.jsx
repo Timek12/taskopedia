@@ -1,4 +1,5 @@
 import Student from "./Student";
+import StudentReview from "./StudentReview";
 
 export default function MainBody() {
   const whatWeWillLearn = "React JS";
@@ -19,12 +20,16 @@ export default function MainBody() {
           className="Agata Kowalska"
           codingExperience={4}
           headshot="https://api.lorem.space/image/face?w=150&h=150"
-        />
+        >
+          <StudentReview />
+        </Student>
         <Student
           className="Agnieszka Wlodarczyk"
           codingExperience={5}
           headshot="https://api.lorem.space/image/face?w=150&h=151"
-        />
+        >
+          <StudentReview />
+        </Student>
         <Student
           className="Kamila Bakala"
           codingExperience={2}
